@@ -12,11 +12,11 @@ const experiences = [
         period: "Sep 2025 – Present",
         location: "Hyderabad",
         description: [
-            "Building enterprise backend systems using Java and Spring Boot",
+            "Building enterprise backend systems using Python and Java",
             "Working with large-scale data, APIs, and production-grade workflows",
             "Collaborating with cross-functional teams in a regulated environment",
         ],
-        technologies: ["Java", "Spring Boot", "Enterprise Systems", "APIs"],
+        technologies: ["Python", "Java", "Enterprise Systems", "APIs"],
         url: "https://www2.deloitte.com/",
     },
     {
@@ -39,13 +39,13 @@ const experiences = [
         period: "Apr 2025 – May 2025",
         location: "Hyderabad",
         description: [
-            "Built backend services using FastAPI and Go",
+            "Built backend services using FastAPI and Python",
             "Designed RESTful APIs and backend architecture",
             "Automated data pipelines for ingestion and processing",
             "Deployed systems on AWS and GCP",
             "Built internal frontend tools using React",
         ],
-        technologies: ["FastAPI", "Go", "React", "AWS", "GCP", "PostgreSQL"],
+        technologies: ["FastAPI", "Python", "React", "AWS", "GCP", "PostgreSQL"],
         url: "https://signalx.ai/",
     },
 ];

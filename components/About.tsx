@@ -26,8 +26,8 @@ export default function About() {
 
                     <p>
                         At <span className="text-heading">Deloitte</span>, I work on enterprise-scale
-                        systems using <span className="text-accent font-mono">Java</span> and{" "}
-                        <span className="text-accent font-mono">Spring Boot</span>.
+                        systems using <span className="text-accent font-mono">Python</span> and{" "}
+                        <span className="text-accent font-mono">Java</span>.
                     </p>
 
                     <p>
