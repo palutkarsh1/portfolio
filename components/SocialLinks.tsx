@@ -12,7 +12,7 @@ const socialLinks = [
 
 export default function SocialLinks() {
     return (
-        <div className="hidden lg:flex flex-col items-center space-y-6 fixed bottom-0 left-12">
+        <div className="hidden lg:flex flex-col items-center space-y-6 fixed bottom-0 left-12 z-20">
             {socialLinks.map((link, index) => (
                 <motion.a
                     key={link.label}

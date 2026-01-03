@@ -31,7 +31,7 @@ export default function Home() {
       <SocialLinks />
 
       {/* Email - Fixed Bottom Right */}
-      <div className="hidden lg:flex flex-col items-center space-y-6 fixed bottom-0 right-12">
+      <div className="hidden lg:flex flex-col items-center space-y-6 fixed bottom-0 right-12 z-20">
         <a
           href="mailto:palutkarsh1901@gmail.com"
           className="text-foreground hover:text-accent transition-all duration-300 font-mono text-sm vertical-text hover:-translate-y-1"
