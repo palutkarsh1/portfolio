@@ -5,32 +5,36 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-  
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
     font-size: 16px;
     line-height: 1.6;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply text-heading font-semibold;
   }
 
   ::selection {
-    @apply bg-accent/20 text-accent;
+    background-color: rgba(100, 255, 218, 0.2);
+    color: #64ffda;
   }
 }
 
 @layer components {
   .section-heading {
-    @apply text-2xl md:text-3xl font-bold text-heading mb-8 font-mono;
+    @apply text-2xl font-bold text-heading mb-8;
+    font-family: 'JetBrains Mono', monospace;
     position: relative;
     display: flex;
     align-items: center;
@@ -39,7 +43,10 @@
 
   .section-heading::before {
     content: "0" counter(section) ".";
-    @apply text-accent font-mono text-xl md:text-2xl mr-2;
+    color: #64ffda;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
     counter-increment: section;
   }
 
@@ -50,7 +57,7 @@
     width: 300px;
     height: 1px;
     margin-left: 20px;
-    @apply bg-foreground/20;
+    background-color: rgba(136, 146, 176, 0.2);
   }
 
   .link-underline {
@@ -64,7 +71,8 @@
     height: 1px;
     bottom: -2px;
     left: 0;
-    @apply bg-accent transition-all duration-300;
+    background-color: #64ffda;
+    transition: width 0.3s ease;
   }
 
   .link-underline:hover::after {
@@ -72,7 +80,12 @@
   }
 
   .nav-link {
-    @apply flex items-center py-3 text-sm font-mono text-foreground hover:text-accent transition-all duration-300;
+    @apply flex items-center py-3 text-sm text-foreground transition-all duration-300;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .nav-link:hover {
+    @apply text-accent;
   }
 
   .nav-link.active {
@@ -85,29 +98,48 @@
     width: 40px;
     height: 1px;
     margin-right: 12px;
-    @apply bg-foreground transition-all duration-300;
+    background-color: #8892b0;
+    transition: all 0.3s ease;
   }
 
   .nav-link.active::before,
   .nav-link:hover::before {
     width: 60px;
-    @apply bg-accent;
+    background-color: #64ffda;
   }
 
   .btn-primary {
-    @apply px-6 py-3 border border-accent text-accent rounded font-mono text-sm hover:bg-accent/10 transition-all duration-300;
+    @apply px-6 py-3 border border-accent text-accent rounded text-sm transition-all duration-300;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .btn-primary:hover {
+    background-color: rgba(100, 255, 218, 0.1);
   }
 
   .experience-card {
-    @apply p-6 rounded-lg transition-all duration-300 hover:bg-foreground/5 cursor-pointer;
+    @apply p-6 rounded-lg transition-all duration-300 cursor-pointer;
+  }
+
+  .experience-card:hover {
+    background-color: rgba(136, 146, 176, 0.05);
   }
 
   .project-card {
-    @apply p-6 rounded-lg bg-foreground/5 hover:bg-foreground/10 transition-all duration-300 border border-transparent hover:border-accent/20;
+    @apply p-6 rounded-lg transition-all duration-300;
+    background-color: rgba(136, 146, 176, 0.05);
+    border: 1px solid transparent;
+  }
+
+  .project-card:hover {
+    background-color: rgba(136, 146, 176, 0.1);
+    border-color: rgba(100, 255, 218, 0.2);
   }
 
   .tech-tag {
-    @apply px-3 py-1 text-xs font-mono text-accent bg-accent/10 rounded-full;
+    @apply px-3 py-1 text-xs text-accent rounded-full;
+    font-family: 'JetBrains Mono', monospace;
+    background-color: rgba(100, 255, 218, 0.1);
   }
 }
 
