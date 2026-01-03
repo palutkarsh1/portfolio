@@ -43,7 +43,7 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4 }}
                 >
-                    I'm a <span className="text-accent">Full Stack Developer</span> and{" "}
+                    I&apos;m a <span className="text-accent">Full Stack Developer</span> and{" "}
                     <span className="text-accent">Analyst</span> specializing in backend
                     engineering with <span className="text-accent font-mono">FastAPI</span>,
                     AI/ML systems, and production-ready cloud applications. Currently building

@@ -21,7 +21,7 @@ export default function Contact() {
                     animate={isInView ? { opacity: 1 } : { opacity: 0 }}
                     transition={{ delay: 0.1 }}
                 >
-                    04. What's Next?
+                    04. What&apos;s Next?
                 </motion.p>
 
                 <motion.h2
@@ -39,7 +39,7 @@ export default function Contact() {
                     animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                     transition={{ delay: 0.3 }}
                 >
-                    I'm currently seeking backend-focused roles with strong emphasis on{" "}
+                    I&apos;m currently seeking backend-focused roles with strong emphasis on{" "}
                     <span className="text-accent font-mono">FastAPI</span>. Whether you have an
                     opportunity, a question, or just want to say hi, my inbox is always open.
                 </motion.p>
