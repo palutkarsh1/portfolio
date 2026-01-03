@@ -11,7 +11,7 @@ const projects = [
         description:
             "Server-side playlist scraping using Crawlee with data visualization of views and videos. UUID-based scraping strategy to avoid cache collisions.",
         technologies: ["Next.js", "React", "Tailwind", "Crawlee", "Playwright"],
-        liveUrl: "https://yt-playlist-analyzer-production.up.railway.app/",
+        liveUrl: "https://yt-playlist-analyzer.onrender.com/",
         featured: true,
     },
     {
